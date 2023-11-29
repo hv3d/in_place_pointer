@@ -6,3 +6,7 @@ Using as std::vector to store your data guarantees the data being stored contino
 For the dynamic classes, the advice is to use a std::vector<std::shared_ptr<T>>, which leaves no guarantee of data layout.
 
 My idea is to define a maximum size, add a simple charbuf of that size for memory and use inplace constructors and assignment.
+
+The test program uses windows specific calls for measuring time.
+
+TODO: avoid having operators as per object members.
